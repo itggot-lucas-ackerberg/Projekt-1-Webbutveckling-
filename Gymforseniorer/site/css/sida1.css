@@ -4,3 +4,32 @@ and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2) { 
 
 }
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    width: 375px;
+    height: 667px;
+    background-color: pink;
+    grid-template-columns: repeat( 8, 2fr);
+    grid-template-rows: repeat( 14, 4fr);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 9;
+    background-color: white;
+}
+
+.header {
+    display: grid;
+    grid-row: 2 / 4;
+    grid-column: span 9;
+    background-color: brown;
+}
